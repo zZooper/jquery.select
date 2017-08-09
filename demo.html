@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="zh_cn">
+  <head>
+    <title>select.suggest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <script src="js/jquery-1.10.2.js"></script>
+     <script src="js/jquery.select.js"></script>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div>
+    <div>
+  	<div>.col-md-1
+  	</div>
+  	<div style="margin:108.5px"><input id="testInput" type="text" /></div>
+  	</div>
+  	
+  	<div>
+	  	<div>.col-md-1</div>
+	  	<div style="margin:205px">
+	  		<input id="testInput2" type="text" style="width:450px;"/>
+	  	</div>
+  	</div>			
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+  </body>
+  <script type="text/javascript">
+  	var datas =[{"id":"2","text":"中国石油天然气股份有限公司"}, 
+{"id":"4","text":"中国建筑股份有限公司"},
+{"id":"3","text":"中国移动有限公司"},
+{"id":"5","text":"中国工商银行股份有限公司"},
+{"id":"7","text":"中国铁建股份有限公司"},
+{"id":"6","text":"中国中铁股份有限公司"},
+{"id":"8","text":"上海汽车集团股份有限公司"},
+{"id":"9","text":"中国建设银行股份有限公司"},
+{"id":"11","text":"中国农业银行股份有限公司"},
+{"id":"10","text":"	中国人寿保险股份有限公司"},
+{"id":"12","text":"中国银行股份有限公司"},
+{"id":"14","text":"中国平安保险(集团)股份有限公司"},
+{"id":"13","text":"中国交通建设股份有限公司"},
+{"id":"15","text":"	中国电信股份有限公司"},
+{"id":"16","text":"中国人民保险集团股份有限公司"},
+{"id":"18","text":"	中国联合网络通信股份有限公司"},
+{"id":"19","text":"	中国神华能源股份有限公司"},
+{"id":"20","text":"	中国海洋石油有限公司"},
+{"id":"16	","text":"中国冶金科工股份有限公司"},
+{"id":"21","text":"	联想集团有限公司"}];
+var itemSelectFuntion = function(){
+  		alert(this.id + "," + this.innerHTML);
+  		};
+  	$.selectSuggest('testInput',datas,itemSelectFuntion);
+  	$.selectSuggest('testInput2',datas,itemSelectFuntion);
+  	</script>
+</html>
